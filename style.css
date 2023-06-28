@@ -1,0 +1,79 @@
+:root{
+    --primary: #c9c9c9;
+    --secondary: #7cf2ff;
+    --alternative: #6d92e0;
+}
+
+body{
+    font-family: 'Alef', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
+    font-family: 'Belanosima', sans-serif;
+    color: var(--colorTitle);
+}
+
+.background{
+    background-image: url(./media/header.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titolo{
+    font-size: 160px;
+    width: 800px;
+    height: 90vh;
+}
+
+@media screen and (max-width: 810px) {
+    .titolo{
+        font-size: 100px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .titolo{
+        font-size: 70px;
+        width: 350px;
+    }
+
+    .background{
+        background-image: url(./media/header.jpeg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav-link{
+    font-size: 25px;
+}
+.nav-link:hover{
+    color: var(--colorTitle);
+}
+
+.navCustom{
+    width: 70%;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    transition: 0.3s;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+}
