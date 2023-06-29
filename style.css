@@ -1,7 +1,7 @@
 :root{
-    --primary: #c9c9c9;
-    --secondary: #7cf2ff;
-    --alternative: #6d92e0;
+    --primary: #5f5e5e;
+    --secondary: #3d4a6e;
+    --alternative: #00a6ff;
 }
 
 body{
@@ -10,44 +10,10 @@ body{
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
     font-family: 'Belanosima', sans-serif;
-    color: var(--colorTitle);
+    color: var(--secondary);
 }
 
-.background{
-    background-image: url(./media/header.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.titolo{
-    font-size: 160px;
-    width: 800px;
-    height: 90vh;
-}
-
-@media screen and (max-width: 810px) {
-    .titolo{
-        font-size: 100px;
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .titolo{
-        font-size: 70px;
-        width: 350px;
-    }
-
-    .background{
-        background-image: url(./media/header.jpeg);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;    
-    }
-}
-
+/* Navbar */
 .logo{
     width: 50px;
 }
@@ -56,7 +22,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
     font-size: 25px;
 }
 .nav-link:hover{
-    color: var(--colorTitle);
+    color: var(--alternative);
 }
 
 .navCustom{
@@ -77,3 +43,31 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
     width: 100%;
     transition: 0.3s;
 }
+
+/* Navbar end */
+
+/* Header */
+
+.background{
+    background-image: linear-gradient(rgba(23, 23, 23, 0.2), rgba(23, 23, 23, 0.2)), url(./media/header.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titolo{
+    font-size: 160px;
+    width: 800px;
+    height: 90vh;
+    text-shadow: 2px 1px 8px rgb(45, 45, 45);
+}
+
+@media screen and (max-width: 500px) {
+    .titolo{
+        font-size: 70px;
+        width: 350px;
+    }
+}
+
+/* Header end */

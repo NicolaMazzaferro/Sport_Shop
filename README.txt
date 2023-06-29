@@ -1,4 +1,4 @@
-color: #c9c9c9; #7cf2ff; #6d92e0;
+color: #5f5e5e; #3d4a6e;
 
 font-family: 'Alef', sans-serif;
 font-family: 'Belanosima', sans-serif;
