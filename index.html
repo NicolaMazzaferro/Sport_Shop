@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Presto</title>
+    <!-- Swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,61 +19,111 @@
 </head>
 <body>
     
-
     <!-- Header -->
-
+    
     <div class="background">
-
-            
-    <!-- Navbar -->
-    
-    <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container-fluid d-flex navCustom">
-            <a class="navbar-brand" href="#"><img class="logo" src="./media/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link4</a>
-                    </li>
-                </ul>
-                <div class="logo"> </div>
+        
+        <!-- Navbar -->
+        
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid d-flex navCustom">
+                <a class="navbar-brand" href="#"><img class="logo" src="./media/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link4</a>
+                        </li>
+                    </ul>
+                    <div class="logo"> </div>
+                </div>
             </div>
-        </div>
-    </nav>
-    
-    <!-- Navbar End -->
-
-
+        </nav>
+        
+        <!-- Navbar End -->
+        
+        
         <h1 class="titolo d-flex align-items-center justify-content-center text-center text-white">LOREM IPSUM</h1>
-
+        
     </div>
     
     <!-- Header End -->
+    
+    <!-- Section Numeri -->
+    
+    <section class="container-fluid divideSezioni">
+        <div class="row text-center">
+            <div class="col-12 col-md-6">
+                <h2 class="m-5">LOREM</h2>
+                <p class="h2 text-secondary mb-5" id="primoNumero">0</p>
+                <img class="rounded-circle imgCustom border p-2 border-4 border-primary mb-5" src="./media/img1.jpeg" alt="calcio">
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="rounded-circle imgCustom border p-2 border-4 border-primary mt-5" src="./media/img2.jpeg" alt="tennis">
+                <h2 class="m-5">LOREM</h2>
+                <p class="h2 text-secondary" id="secondoNumero">0</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Numeri end -->
+    
+    <!-- Section Carousel -->
+    
+    <section class="container-fluid bgCarouselSection">
+        <div class="row">
+            <div class="col-12">
+                
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./media/img3.jpeg" alt="surf"></div>
+                        <div class="swiper-slide"><img src="./media/img4.jpeg" alt="run"></div>
+                        <div class="swiper-slide"><img src="./media/img5.jpeg" alt="beach"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+            </div>
+        </div>
 
+        <div class="row mt-5 justify-content-between" id="rowArticolo">
+
+        </div>
+    </section>
+    
+    <!-- Section Carousel end -->
     
     
     
     
-    <div style="height: 4000px;"></div>
+    <div style="height: 1000px;"></div>
     
     
     
     
     
     
-    
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Main js -->
