@@ -8,8 +8,8 @@ body{
     font-family: 'Alef', sans-serif;
 }
 
-.color-secondary{
-    color: var(--secondary);
+.color-primary{
+    color: var(--primary);
 }
 
 .ff-title{
@@ -113,6 +113,7 @@ h2, .h2{
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 15%;
+    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 800px) {
@@ -150,3 +151,14 @@ h2, .h2{
   }
 
 /* Section Carousel end */
+
+/* Section Card */
+
+.card{
+    box-shadow: 1px 1px 20px rgb(59, 59, 59);
+    width: 18rem;
+    text-align: center;
+    border: none;
+}
+
+/* Section Card */
