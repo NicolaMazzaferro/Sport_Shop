@@ -76,7 +76,7 @@ h2, .h2{
 .titolo{
     font-size: 160px;
     width: 800px;
-    height: 90vh;
+    padding-top: 100px;
     text-shadow: 2px 1px 8px rgb(45, 45, 45);
 }
 
@@ -84,6 +84,41 @@ h2, .h2{
     .titolo{
         font-size: 70px;
         width: 350px;
+    }
+}
+
+.containerSearch{
+    padding-top: 0;
+
+}
+
+.input-group{
+    width: 350px;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    z-index: 0!important;
+}
+
+.btnFiltri{
+    cursor:default!important;
+}
+
+.btn:hover {
+    color: var(--secondary);
+    background-color: var(--alternative);
+}
+
+.btn.show {
+    color: var(--secondary);
+    background-color: var(--alternative)!important;
+}
+
+@media screen and (max-width: 990px) {
+    .searchNav{
+        margin-bottom: 20px;
     }
 }
 
