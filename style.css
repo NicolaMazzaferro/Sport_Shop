@@ -12,6 +12,10 @@ body{
     color: var(--primary);
 }
 
+.color-alternative{
+    color: var(--alternative);
+}
+
 .ff-title{
     font-family: 'Belanosima', sans-serif;
 }
@@ -161,4 +165,84 @@ h2, .h2{
     border: none;
 }
 
-/* Section Card */
+/* Section Card end*/
+
+/* Section Timeline */
+
+.containeTimeline{
+    margin-top: 150px;
+}
+
+.barra{
+    border-left: 4px solid var(--secondary);
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline::before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--secondary);
+    background-color: white;
+    border-radius: 50%;
+    left: -18px;
+}
+
+/* Section Timeline end */
+
+/* Section Grid Image */
+
+.containerImgGrid{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .photo-gallery{
+    display: flex;
+    gap: 20px;
+  }
+
+  .columnImgGrid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .photo img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media(max-width: 768px){
+    .photo-gallery {
+      flex-direction: column;
+    }
+  }
+
+  /* Section Grid Image end */
+
+  /* Footer */
+
+  .containerFooter{
+    background-color: #3d4a6e;
+  }
+
+  .containerFooter li, a, ul{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .containerFooter a:hover{
+    color: var(--alternative)
+  }
+
+  /* Footer end */

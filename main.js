@@ -117,6 +117,7 @@ let elementCard = [
 function newCard(title, desciption, imgProduct) {
     elementCard.push({titolo: title, descrizione: desciption, immagineProdotto: imgProduct})
 }
+let display
 
 function newElementCard() {
 
@@ -125,7 +126,10 @@ function newElementCard() {
         
         card.classList.add('col-12', 'col-md-4', 'd-flex', 'justify-content-center')
         
-        card.innerHTML = `<div class="card rounded-5 my-5">
+        card.innerHTML = `<div class="card rounded-5 my-5  position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger spinner-grow w-25 fs-5" id'newLabel' role="status">
+        New
+      </span>
         <img src="${element.immagineProdotto}" class="card-img-top rounded-5" alt="card">
         <div class="card-body">
         <h5 class="h3">${element.titolo}</h5>
@@ -138,8 +142,6 @@ function newElementCard() {
     });
 }
 
-
-
 newCard('Prodotto1','prova Prodotto 1','./media/card2.jpeg')
 newCard('Prodotto2','prova Prodotto 2','./media/card3.jpeg')
 newCard('Prodotto3','prova Prodotto 3','./media/card4.jpeg')
@@ -150,6 +152,7 @@ newElementCard()
 let newProductTitle
 let newProductDescription
 let newProductImg
+
 addProduct.addEventListener('click', () => {
     newProductTitle = prompt('INSERISCI NOME PRODOTTO: ')
     newProductDescription = prompt('INSERISCI DESCRIZIONE PRODOTTO: ')
@@ -161,6 +164,5 @@ addProduct.addEventListener('click', () => {
 })
 
 let buttonAdd = document.querySelector('#containerButton')
-
 
 // Section Card end
