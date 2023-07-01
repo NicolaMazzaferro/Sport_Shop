@@ -96,20 +96,28 @@ h2, .h2{
     width: 350px;
 }
 
-.btn{
+.btnSearch{
     background-color: white;
     border: none;
     z-index: 0!important;
 }
 
-.btnFiltri{
-    cursor:default!important;
-}
-
-.btn:hover {
+.btnSearch:hover, .btnFiltri:hover{
     color: var(--secondary);
     background-color: var(--alternative);
 }
+
+.btnFiltri{
+    cursor:default!important;
+    background-color: white;
+    border: none;
+    z-index: 0!important;
+}
+
+/* .btn:hover {
+    color: var(--secondary);
+    background-color: var(--alternative);
+} */
 
 .btn.show {
     color: var(--secondary);
