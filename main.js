@@ -154,9 +154,9 @@ let newProductDescription
 let newProductImg
 
 addProduct.addEventListener('click', () => {
-    newProductTitle = prompt('INSERISCI NOME PRODOTTO: ')
-    newProductDescription = prompt('INSERISCI DESCRIZIONE PRODOTTO: ')
-    newProductImg = prompt('INSERISCI IMMAGINE PRODOTTO PRODOTTO: ')
+    newProductTitle = nomeProdotto.value
+    newProductDescription = descrizioneProdotto.value
+    newProductImg = immagineProdotto.value
     newCard(newProductTitle, newProductDescription, newProductImg)
     containerCard.innerHTML = ''
     containerCard.appendChild(buttonAdd)

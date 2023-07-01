@@ -61,6 +61,10 @@ h2, .h2{
     z-index: 2;
 }
 
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
 /* Navbar end */
 
 /* Header */
@@ -89,7 +93,11 @@ h2, .h2{
 
 .containerSearch{
     padding-top: 0;
+}
 
+.form-control:focus{
+    border-color: #e0e0e0;
+    box-shadow: none;
 }
 
 .input-group{
@@ -113,11 +121,6 @@ h2, .h2{
     border: none;
     z-index: 0!important;
 }
-
-/* .btn:hover {
-    color: var(--secondary);
-    background-color: var(--alternative);
-} */
 
 .btn.show {
     color: var(--secondary);
