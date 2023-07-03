@@ -117,7 +117,6 @@ let elementCard = [
 function newCard(title, desciption, imgProduct) {
     elementCard.push({titolo: title, descrizione: desciption, immagineProdotto: imgProduct})
 }
-let display
 
 function newElementCard() {
 
