@@ -66,15 +66,12 @@
                 <h1 class="titolo text-white">LOREM IPSUM</h1>
 
                 <div class="input-group mt-3">
-                    <button class="btn bg-white btnFiltri">Filtri</button>
+                    <button id="filtroSelezionato" class="btn bg-white btnFiltri">Filtri</button>
                     <button type="button" class="btn btnFiltri btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Lorem</a></li>
-                      <li><a class="dropdown-item" href="#">Lorem</a></li>
-                      <li><a class="dropdown-item" href="#">Lorem</a></li>
-                      <li><a class="dropdown-item" href="#">Lorem</a></li>
+                    <ul class="dropdown-menu" id="filtri" >
+                        <li class="dropdown-item" id="All">All</li>
                     </ul>
                     <input type="search" class="form-control search searchHeader" placeholder="Cerca">
                     <button class="btn btnSearch btn-outline-secondary" type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
@@ -91,13 +88,13 @@
 
      <div class="container-fluid mt-5">
         <div class="row" id="containerCard"> 
-           
+           <div class="col-12 col-md-3">
+            
+           </div>
         </div>  
     </div>
     
     <!-- Section Card end -->
-
-    <div style="height: 700px;"></div>
 
     <!-- Section Footer -->
     

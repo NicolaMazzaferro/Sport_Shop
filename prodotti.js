@@ -2,6 +2,7 @@
 
 let navbar = document.querySelector('#navbar')
 let navCustom = document.querySelector('.navCustom')
+let filtri = document.querySelector('#filtri')
 
 
 
@@ -49,20 +50,71 @@ fetch('./data.json').then((response) => response.json()).then((data) => {
 
     let wordInput = document.querySelectorAll('.search')
     
-    
-    function searchByWord(search){
-        let filtrati = data.filter( (data)=> data.name.toUpperCase().includes(search.value.toUpperCase()));
+    let searched = '';
+    let finalid = 'All'
+
+    function searchByWord(array){
+        let filtrati = array.filter( (annuncio)=> annuncio.name.toUpperCase().includes(searched.toUpperCase()));
         
-        newCard(filtrati)
+        return filtrati
     }
 
     wordInput.forEach(element => {
         element.addEventListener('input', ()=>{
-            searchByWord(element);
+            searched = element.value
+            
+            globalFilter(finalid)
         });
-        
     });
+    
+    // Search end
+
+    // Filter Category
+
+    function categorie() {
+        let categorie = data.map((element) => element.category)
+        let categoria = Array.from(new Set(categorie))
+        
+        categoria.forEach(el => {
+            let ul = document.createElement('ul')
+            ul.innerHTML = `
+            <li class="dropdown-item" id="${el}">${el}</li>
+            `
+            filtri.appendChild(ul)
+        });
+    }
+    
+    categorie()
+    
+    let itemsDropdown = document.querySelectorAll('.dropdown-item') 
+    
+    function filtraCategorie(id , array) {
+
+        if(id == 'All'){
+            return array;
+           } else{
+               let filtered = array.filter( (annuncio)=> annuncio.category == id );
+  
+               return filtered;
+           }
+    }
+
+    function globalFilter(id){
+        let filteredByCategory = filtraCategorie(id, data);
+        let filteredByWord = searchByWord(filteredByCategory);
+        newCard(filteredByWord);
+    }
+
+    let filtroSelezionato = document.querySelector('#filtroSelezionato')
+
+    itemsDropdown.forEach( (el) => {
+        el.addEventListener('click' , () => {
+            filtroSelezionato.innerHTML = el.id
+            finalid = el.id
+            globalFilter(finalid)
+        })
+    })
+
+    // // Filter Category end
 
 })
-
-// Search end
